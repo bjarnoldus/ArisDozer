@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E3200" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Connection" representedClassName="Connection" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="porta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="portb" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="devicea" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Device" syncable="YES"/>
+        <relationship name="deviceb" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Device" syncable="YES"/>
+    </entity>
+    <entity name="Device" representedClassName="Device" syncable="YES">
+        <attribute name="brand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mac" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="type" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DeviceType" syncable="YES"/>
+    </entity>
+    <entity name="DeviceType" representedClassName="DeviceType" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName="Image" syncable="YES">
+        <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sizex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sizey" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ImageLocation" representedClassName="ImageLocation" syncable="YES">
+        <attribute name="locationx" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="locationy" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="device" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Device" syncable="YES"/>
+        <relationship name="image" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Image" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Image" positionX="160" positionY="192" width="128" height="103"/>
+        <element name="ImageLocation" positionX="-198" positionY="126" width="128" height="118"/>
+        <element name="Device" positionX="-171" positionY="-61" width="128" height="103"/>
+        <element name="DeviceType" positionX="54" positionY="53" width="128" height="58"/>
+        <element name="Connection" positionX="97" positionY="-117" width="128" height="118"/>
+    </elements>
 </model>

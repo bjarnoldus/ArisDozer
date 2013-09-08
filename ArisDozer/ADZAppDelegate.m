@@ -13,15 +13,83 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize window = _window;
+@synthesize mainViewController = _mainViewController;
+
+- (void) deleteAllObjects: (NSString *) entityDescription  {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityDescription inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error;
+    NSArray *items = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    
+    for (NSManagedObject *managedObject in items) {
+    	[context deleteObject:managedObject];
+    }
+    if (![context save:&error]) {
+    	NSLog(@"Error deleting %@ - error:%@",entityDescription,error);
+    }
+    
+}
+
+-(void)initDatabase{
+    [self deleteAllObjects:@"Image"];
+    [self deleteAllObjects:@"ImageLocation"];
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSManagedObject *ImageServer = [NSEntityDescription
+                                       insertNewObjectForEntityForName:@"Image"
+                                       inManagedObjectContext:context];
+    [ImageServer setValue:[NSNumber numberWithInt:200] forKey:@"sizex"];
+    [ImageServer setValue:[NSNumber numberWithInt:150] forKey:@"sizey"];
+    [ImageServer setValue:@"server.jpg" forKey:@"filename"];
+    [ImageServer setValue:@"server" forKey:@"name"];
+    NSManagedObject *ImageAppleTV = [NSEntityDescription
+              insertNewObjectForEntityForName:@"Image"
+              inManagedObjectContext:context];
+    [ImageAppleTV setValue:[NSNumber numberWithInt:200] forKey:@"sizex"];
+    [ImageAppleTV setValue:[NSNumber numberWithInt:137] forKey:@"sizey"];
+    [ImageAppleTV setValue:@"appltv.png" forKey:@"filename"];
+    [ImageAppleTV setValue:@"appletv" forKey:@"name"];
+    NSManagedObject *Image7050 = [NSEntityDescription
+             insertNewObjectForEntityForName:@"Image"
+             inManagedObjectContext:context];
+    [Image7050 setValue:[NSNumber numberWithInt:200] forKey:@"sizex"];
+    [Image7050 setValue:[NSNumber numberWithInt:60] forKey:@"sizey"];
+    [Image7050 setValue:@"7050q-16.png" forKey:@"filename"];
+    [Image7050 setValue:@"7050" forKey:@"name"];
+     NSError *error;
+    if (![context save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+
+
+}
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self initDatabase];
+
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.mainViewController = [[ADZMainViewController alloc] initWithNibName:nil
+                                                                   bundle:nil];
     self.window.backgroundColor = [UIColor whiteColor];
+   // [self.window addSubview:self.mainViewController.view];
+    [self.window setRootViewController:self.mainViewController];
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

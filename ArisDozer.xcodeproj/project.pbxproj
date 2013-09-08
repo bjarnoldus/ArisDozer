@@ -24,6 +24,23 @@
 		904B0B7E17DB438A00DB32D2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904B0B5D17DB438A00DB32D2 /* CoreData.framework */; };
 		904B0B8617DB438A00DB32D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904B0B8417DB438A00DB32D2 /* InfoPlist.strings */; };
 		904B0B8917DB438A00DB32D2 /* ArisDozerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B0B8817DB438A00DB32D2 /* ArisDozerTests.m */; };
+		904B0B9417DB4C1A00DB32D2 /* 7050q-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 904B0B9317DB4C1A00DB32D2 /* 7050q-16.png */; };
+		90D524C317DB5A4C00902CBC /* ADZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D524C117DB5A4C00902CBC /* ADZMainViewController.m */; };
+		90D524C417DB5A4C00902CBC /* ADZMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90D524C217DB5A4C00902CBC /* ADZMainViewController.xib */; };
+		90D524C717DB5D0400902CBC /* appltv.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D524C517DB5D0400902CBC /* appltv.png */; };
+		90D524C817DB5D0400902CBC /* server.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90D524C617DB5D0400902CBC /* server.jpg */; };
+		90D524CB17DB638200902CBC /* ADZDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D524CA17DB638100902CBC /* ADZDraggableView.m */; };
+		90D524D117DB6FDF00902CBC /* ADZCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D524D017DB6FDF00902CBC /* ADZCanvas.m */; };
+		90D524F817DBC3EF00902CBC /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D524F717DBC3EF00902CBC /* Connection.m */; };
+		90D524FB17DBC40100902CBC /* DeviceType.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D524FA17DBC40100902CBC /* DeviceType.m */; };
+		90D524FE17DBC43500902CBC /* ImageLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D524FD17DBC43500902CBC /* ImageLocation.m */; };
+		90D5250517DBD03500902CBC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D5250417DBD03500902CBC /* libz.dylib */; };
+		90D5251917DBD72300902CBC /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D5251817DBD72300902CBC /* NMSSH.framework */; };
+		90D5251C17DC5F0400902CBC /* ADZAristaFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D5251B17DC5F0400902CBC /* ADZAristaFetcher.m */; };
+		90D5251F17DC72C100902CBC /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D5251E17DC72C000902CBC /* Device.m */; };
+		90D5252217DC72F700902CBC /* ADZLLPDNeighbor.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D5252117DC72F700902CBC /* ADZLLPDNeighbor.m */; };
+		90D5252517DC798F00902CBC /* ADZLLPDDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D5252417DC798F00902CBC /* ADZLLPDDeviceInfo.m */; };
+		90D5252817DCAC1600902CBC /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D5252717DCAC1500902CBC /* Image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +50,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 904B0B5317DB438A00DB32D2;
 			remoteInfo = ArisDozer;
+		};
+		90D5251417DBD37300902CBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D5250F17DBD37200902CBC /* NMSSH-iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18A0964F17D6A8C4008B76FB;
+			remoteInfo = NMSSH;
+		};
+		90D5251617DBD3A600902CBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D5250F17DBD37200902CBC /* NMSSH-iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A0965D17D6A97C008B76FB;
+			remoteInfo = "NMSSH Framework";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,6 +89,35 @@
 		904B0B8517DB438A00DB32D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		904B0B8717DB438A00DB32D2 /* ArisDozerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArisDozerTests.h; sourceTree = "<group>"; };
 		904B0B8817DB438A00DB32D2 /* ArisDozerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArisDozerTests.m; sourceTree = "<group>"; };
+		904B0B9317DB4C1A00DB32D2 /* 7050q-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7050q-16.png"; sourceTree = "<group>"; };
+		90D524C017DB5A4C00902CBC /* ADZMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZMainViewController.h; sourceTree = "<group>"; };
+		90D524C117DB5A4C00902CBC /* ADZMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZMainViewController.m; sourceTree = "<group>"; };
+		90D524C217DB5A4C00902CBC /* ADZMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADZMainViewController.xib; sourceTree = "<group>"; };
+		90D524C517DB5D0400902CBC /* appltv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appltv.png; sourceTree = "<group>"; };
+		90D524C617DB5D0400902CBC /* server.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = server.jpg; sourceTree = "<group>"; };
+		90D524C917DB638100902CBC /* ADZDraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZDraggableView.h; sourceTree = "<group>"; };
+		90D524CA17DB638100902CBC /* ADZDraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZDraggableView.m; sourceTree = "<group>"; };
+		90D524CF17DB6FDF00902CBC /* ADZCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZCanvas.h; sourceTree = "<group>"; };
+		90D524D017DB6FDF00902CBC /* ADZCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZCanvas.m; sourceTree = "<group>"; };
+		90D524F617DBC3EF00902CBC /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		90D524F717DBC3EF00902CBC /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		90D524F917DBC40100902CBC /* DeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceType.h; sourceTree = "<group>"; };
+		90D524FA17DBC40100902CBC /* DeviceType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceType.m; sourceTree = "<group>"; };
+		90D524FC17DBC43500902CBC /* ImageLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLocation.h; sourceTree = "<group>"; };
+		90D524FD17DBC43500902CBC /* ImageLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLocation.m; sourceTree = "<group>"; };
+		90D5250417DBD03500902CBC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		90D5250F17DBD37200902CBC /* NMSSH-iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "NMSSH-iOS.xcodeproj"; path = "../NMSSH-master/NMSSH-iOS.xcodeproj"; sourceTree = "<group>"; };
+		90D5251817DBD72300902CBC /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMSSH.framework; path = "../NMSSH-master/Products/NMSSH.framework"; sourceTree = "<group>"; };
+		90D5251A17DC5F0400902CBC /* ADZAristaFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZAristaFetcher.h; sourceTree = "<group>"; };
+		90D5251B17DC5F0400902CBC /* ADZAristaFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZAristaFetcher.m; sourceTree = "<group>"; };
+		90D5251D17DC72C000902CBC /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		90D5251E17DC72C000902CBC /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		90D5252017DC72F700902CBC /* ADZLLPDNeighbor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZLLPDNeighbor.h; sourceTree = "<group>"; };
+		90D5252117DC72F700902CBC /* ADZLLPDNeighbor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZLLPDNeighbor.m; sourceTree = "<group>"; };
+		90D5252317DC798F00902CBC /* ADZLLPDDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADZLLPDDeviceInfo.h; sourceTree = "<group>"; };
+		90D5252417DC798F00902CBC /* ADZLLPDDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZLLPDDeviceInfo.m; sourceTree = "<group>"; };
+		90D5252617DCAC1500902CBC /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		90D5252717DCAC1500902CBC /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D5251917DBD72300902CBC /* NMSSH.framework in Frameworks */,
+				90D5250517DBD03500902CBC /* libz.dylib in Frameworks */,
 				904B0B5817DB438A00DB32D2 /* UIKit.framework in Frameworks */,
 				904B0B5A17DB438A00DB32D2 /* Foundation.framework in Frameworks */,
 				904B0B5C17DB438A00DB32D2 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +151,9 @@
 		904B0B4B17DB438A00DB32D2 = {
 			isa = PBXGroup;
 			children = (
+				90D5251817DBD72300902CBC /* NMSSH.framework */,
+				90D5250F17DBD37200902CBC /* NMSSH-iOS.xcodeproj */,
+				90D5250417DBD03500902CBC /* libz.dylib */,
 				904B0B5F17DB438A00DB32D2 /* ArisDozer */,
 				904B0B8117DB438A00DB32D2 /* ArisDozerTests */,
 				904B0B5617DB438A00DB32D2 /* Frameworks */,
@@ -123,7 +188,31 @@
 				904B0B6817DB438A00DB32D2 /* ADZAppDelegate.h */,
 				904B0B6917DB438A00DB32D2 /* ADZAppDelegate.m */,
 				904B0B7117DB438A00DB32D2 /* ArisDozer.xcdatamodeld */,
+				90D5252617DCAC1500902CBC /* Image.h */,
+				90D5252717DCAC1500902CBC /* Image.m */,
+				90D5251D17DC72C000902CBC /* Device.h */,
+				90D5251E17DC72C000902CBC /* Device.m */,
+				90D5252017DC72F700902CBC /* ADZLLPDNeighbor.h */,
+				90D5252317DC798F00902CBC /* ADZLLPDDeviceInfo.h */,
+				90D5252417DC798F00902CBC /* ADZLLPDDeviceInfo.m */,
+				90D5252117DC72F700902CBC /* ADZLLPDNeighbor.m */,
+				90D524FC17DBC43500902CBC /* ImageLocation.h */,
+				90D524FD17DBC43500902CBC /* ImageLocation.m */,
+				90D524F917DBC40100902CBC /* DeviceType.h */,
+				90D524FA17DBC40100902CBC /* DeviceType.m */,
+				90D524F617DBC3EF00902CBC /* Connection.h */,
+				90D524F717DBC3EF00902CBC /* Connection.m */,
+				904B0B9217DB4C1A00DB32D2 /* Images */,
 				904B0B6017DB438A00DB32D2 /* Supporting Files */,
+				90D524C017DB5A4C00902CBC /* ADZMainViewController.h */,
+				90D524C117DB5A4C00902CBC /* ADZMainViewController.m */,
+				90D524C217DB5A4C00902CBC /* ADZMainViewController.xib */,
+				90D524C917DB638100902CBC /* ADZDraggableView.h */,
+				90D524CA17DB638100902CBC /* ADZDraggableView.m */,
+				90D524CF17DB6FDF00902CBC /* ADZCanvas.h */,
+				90D524D017DB6FDF00902CBC /* ADZCanvas.m */,
+				90D5251A17DC5F0400902CBC /* ADZAristaFetcher.h */,
+				90D5251B17DC5F0400902CBC /* ADZAristaFetcher.m */,
 			);
 			path = ArisDozer;
 			sourceTree = "<group>";
@@ -161,6 +250,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		904B0B9217DB4C1A00DB32D2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				90D524C517DB5D0400902CBC /* appltv.png */,
+				90D524C617DB5D0400902CBC /* server.jpg */,
+				904B0B9317DB4C1A00DB32D2 /* 7050q-16.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		90D5251017DBD37200902CBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90D5251517DBD37300902CBC /* NMSSH.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +282,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				90D5251717DBD3A600902CBC /* PBXTargetDependency */,
 			);
 			name = ArisDozer;
 			productName = ArisDozer;
@@ -220,6 +328,12 @@
 			mainGroup = 904B0B4B17DB438A00DB32D2;
 			productRefGroup = 904B0B5517DB438A00DB32D2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 90D5251017DBD37200902CBC /* Products */;
+					ProjectRef = 90D5250F17DBD37200902CBC /* NMSSH-iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				904B0B5317DB438A00DB32D2 /* ArisDozer */,
@@ -227,6 +341,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		90D5251517DBD37300902CBC /* NMSSH.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NMSSH.framework;
+			remoteRef = 90D5251417DBD37300902CBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		904B0B5217DB438A00DB32D2 /* Resources */ = {
@@ -237,6 +361,10 @@
 				904B0B6C17DB438A00DB32D2 /* Default.png in Resources */,
 				904B0B6E17DB438A00DB32D2 /* Default@2x.png in Resources */,
 				904B0B7017DB438A00DB32D2 /* Default-568h@2x.png in Resources */,
+				904B0B9417DB4C1A00DB32D2 /* 7050q-16.png in Resources */,
+				90D524C417DB5A4C00902CBC /* ADZMainViewController.xib in Resources */,
+				90D524C717DB5D0400902CBC /* appltv.png in Resources */,
+				90D524C817DB5D0400902CBC /* server.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +402,17 @@
 				904B0B6617DB438A00DB32D2 /* main.m in Sources */,
 				904B0B6A17DB438A00DB32D2 /* ADZAppDelegate.m in Sources */,
 				904B0B7317DB438A00DB32D2 /* ArisDozer.xcdatamodeld in Sources */,
+				90D524C317DB5A4C00902CBC /* ADZMainViewController.m in Sources */,
+				90D524CB17DB638200902CBC /* ADZDraggableView.m in Sources */,
+				90D524D117DB6FDF00902CBC /* ADZCanvas.m in Sources */,
+				90D524F817DBC3EF00902CBC /* Connection.m in Sources */,
+				90D524FB17DBC40100902CBC /* DeviceType.m in Sources */,
+				90D524FE17DBC43500902CBC /* ImageLocation.m in Sources */,
+				90D5251C17DC5F0400902CBC /* ADZAristaFetcher.m in Sources */,
+				90D5251F17DC72C100902CBC /* Device.m in Sources */,
+				90D5252217DC72F700902CBC /* ADZLLPDNeighbor.m in Sources */,
+				90D5252517DC798F00902CBC /* ADZLLPDDeviceInfo.m in Sources */,
+				90D5252817DCAC1600902CBC /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +431,11 @@
 			isa = PBXTargetDependency;
 			target = 904B0B5317DB438A00DB32D2 /* ArisDozer */;
 			targetProxy = 904B0B7F17DB438A00DB32D2 /* PBXContainerItemProxy */;
+		};
+		90D5251717DBD3A600902CBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NMSSH Framework";
+			targetProxy = 90D5251617DBD3A600902CBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -376,6 +520,11 @@
 		904B0B8D17DB438A00DB32D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/NMSSH-iOS-bxshccpvbsdhveaclakqczjvulcs/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../NMSSH-master/Products\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArisDozer/ArisDozer-Prefix.pch";
 				INFOPLIST_FILE = "ArisDozer/ArisDozer-Info.plist";
@@ -387,6 +536,11 @@
 		904B0B8E17DB438A00DB32D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/NMSSH-iOS-bxshccpvbsdhveaclakqczjvulcs/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../NMSSH-master/Products\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArisDozer/ArisDozer-Prefix.pch";
 				INFOPLIST_FILE = "ArisDozer/ArisDozer-Info.plist";
@@ -448,6 +602,7 @@
 				904B0B8E17DB438A00DB32D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		904B0B8F17DB438A00DB32D2 /* Build configuration list for PBXNativeTarget "ArisDozerTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +611,7 @@
 				904B0B9117DB438A00DB32D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

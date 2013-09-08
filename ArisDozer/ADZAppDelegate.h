@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ADZMainViewController.h"
+
 
 @interface ADZAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) ADZMainViewController *mainViewController;
+
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
