@@ -37,7 +37,7 @@
 
     NSError *error;
     NSString* pw = [[alertView textFieldAtIndex:0] text];
-    NSArray *switches =[[NSArray alloc] initWithObjects:@"admin@146.50.11.1",@"lab123",nil];
+    NSArray *switches =[[NSArray alloc] initWithObjects:@"admin@<IP/host>",@"lab123",nil];
     ADZAristaFetcher *aristaFetcher = [ADZAristaFetcher alloc];
    NSMutableDictionary *devices = [aristaFetcher fetchNetwork:switches password:pw];
     NSArray *locationsx=

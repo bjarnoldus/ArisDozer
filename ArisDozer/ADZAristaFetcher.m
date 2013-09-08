@@ -14,8 +14,8 @@
 @implementation ADZAristaFetcher
 
 - (NSString*)executeAristaCommand:(NSString*)command host:(NSArray*)host password:(NSString*)pw{
-    NSString *sshhost =@"wipkip.nikhef.nl";
-    NSString *uid =@"jeroen";
+    NSString *sshhost =@"<the ssh host>";
+    NSString *uid =@"uid";
 
     
     NMSSHSession *session = [NMSSHSession connectToHost:sshhost
